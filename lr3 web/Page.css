@@ -1,0 +1,221 @@
+﻿/**/
+th {
+    border: 3px inset black;
+}
+h2{
+    text-indent: 1.5em
+}
+a {
+    color: rgba(0,0,255,0.7);
+}
+
+a:hover {
+    color: purple
+}
+
+p {
+    font-size: 20px;
+}
+
+.marker {
+    list-style-image: url(http://htmlbook.ru/files/images/faq/faq_list5_2.png);
+}
+
+.inline {
+    display: inline;
+}
+
+.form {
+    border: 3px inset black;
+    margin-top: 1.4em;
+    padding: 0.6em;
+    width: 30%;
+}
+
+.button {
+    border: 1px;
+    padding: 0;
+}
+
+input {
+    border: 1px inset;
+    width: 200px;
+    display: inline;
+}
+
+.islam {
+    width: 600px;
+    height: 800px;
+    float: right;
+    transition: 0.5s;
+}
+
+.islam:hover {
+    width: 800px;
+    height: 1000px;
+}
+
+.table {
+    margin: 10px;
+    border: 5px solid Black;
+}
+
+form div {
+    clear: left;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.6em;
+}
+
+form div label {
+    float: left;
+    width: 40%;
+    font: bold 0.9em Arial, Helvetica, sans-serif;
+}
+
+.stroka {
+    color: aqua;
+    background: black;
+    display: block;
+}
+
+.block {
+    background: Brown;
+    display: inline;
+}
+
+.navi {
+    background-size: cover;
+    background: pink;
+    height: 100px;
+    padding: 75px 111px 0px 0px;
+}
+
+body {
+    background: url(https://i1.wallbox.ru/wallpapers/main/201128/trava-siniy-minimalizm-9068735.jpg) repeat-x fixed 0px -200px;
+}
+
+table {
+    background-color: white;
+    border-width: 3px 7px 7px 4px;
+    padding: 7px;
+    border: 4px double black;
+}
+.soc {
+    opacity: 0.5;
+}
+
+.soc:hover {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.gr {
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    background: radial-gradient(yellow, red);
+}
+.gr:hover {
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    background: radial-gradient(blue, aqua);
+ }
+.col {
+    column-width: 200px;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 0px solid white;
+}
+
+.box {
+    background: yellow;
+    width: 200px;
+    padding: 10px;
+    margin-top: 25px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    transform: skewY(-10deg);
+}
+.transform {
+    background: yellow;
+    width: 200px;
+    padding: 10px;
+    margin-top: 25px;
+    border: 5px solid #000;
+    box-sizing: border-box;
+    transform: skewY(10deg);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.container {
+    padding: 150px;
+    position: relative;
+    margin: 20px auto;
+    height: 300px;
+    width: 300px;
+    perspective: 500px;
+}
+
+.cube {
+    width: inherit;
+    height: inherit;
+    transform-style: preserve-3d;
+}
+
+.side {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 3100px;
+}
+
+.front {
+    transform: translateZ(200px);
+    animation: 3s linear vrasheniefront infinite;
+}
+.back {
+    transform: translateZ(-200px);
+    animation: 3s linear vrashenieback infinite;
+}
+@keyframes vrasheniefront {
+    0% {
+        transform: translateZ(200px)
+    }
+
+    50% {
+        transform: rotateY(90deg) translateZ(200px);
+    }
+
+    100% {
+        transform: translateZ(-200px);
+    }
+}
+
+@keyframes vrashenieback {
+    0% {
+        transform: translateZ(-200px)
+    }
+    50% {
+        transform: rotateY(270deg) translateZ(200px);
+    }
+    100% {
+        transform: translateZ(200px)
+    }
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(200px);
+}
